@@ -1,0 +1,17 @@
+node_modules/
+build/
+dist/
+.wrangler/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example.dev.vars
+.dev.vars
+
+# Config local de ferramentas e artefatos pontuais da migração
+.claude/
+migracao-firestore-para-supabase.xlsx
+
+# Cache local do Supabase CLI (as migrations em supabase/migrations/ SÃO versionadas)
+supabase/.temp/

@@ -1,0 +1,19 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "moraes-revestimento",
+  "compatibility_date": "2026-05-25",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "main": "src/worker.ts",
+  "assets": {
+    "directory": "./dist/client"
+  },
+  "r2_buckets": [
+    {
+      "binding": "R2",
+      "bucket_name": "moraes-revestimento",
+      "remote": true
+    }
+  ]
+}
